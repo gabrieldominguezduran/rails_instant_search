@@ -1,7 +1,6 @@
 <div id="<%= dom_id band %>">
-  <p>
-    <strong>Name:</strong>
-    <%= band.name %>
+  <p class="text--lg leading-loose">
+    <%= link_to band.name, bands_path(band), class: "text-gray-800 underline hover:text-gray-500" %>
   </p>
 
 </div>
